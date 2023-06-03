@@ -14,6 +14,7 @@ export const AboutContainer = styled.div`
 `;
 export const LineTitle = styled.div`
   width: 100%;
+  max-width: 1200px;
   border-bottom: 1px solid black;
   height: 48px;
   margin-bottom: 48px;
@@ -43,7 +44,7 @@ export const FirstPostContainer = styled.div`
   img {
     transition: 0.6s;
     :hover {
-      transform: scale(1.2);
+      transform: scale(1.1);
     }
   }
 `;
@@ -85,7 +86,7 @@ export const SecondPostContainer = styled.div`
   img {
     transition: 0.6s;
     :hover {
-      transform: scale(1.2);
+      transform: scale(1.1);
     }
   }
 `;
@@ -100,7 +101,7 @@ export const ThirdPostContainer = styled.div`
   img {
     transition: 0.6s;
     :hover {
-      transform: scale(1.2);
+      transform: scale(1.1);
     }
   }
 `;

@@ -26,56 +26,35 @@ export const AboutSection = () => {
           <h2>Despre Noi</h2>
         </AboutUsTitleContainer>
         <FirstPostContainer>
-          <Image
-            src={Charity1}
-            width={360}
-            height={220}
-            style={{ borderRadius: "8px", objectFit: "cover" }}
-          />
+          <Image src={Charity1} width={360} height={220} style={{ borderRadius: "8px", objectFit: "cover" }} />
           <TextContainer>
             <h3>Cine suntem</h3>
             <span>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
-              consectetur rerum? Consequatur possimus natus iure. Cumque ullam
-              recusandae fugiat error ab, id, officia illum itaque praesentium
-              minus qui maiores officiis! Temporibus eveniet enim atque aut
-              dolore debitis nam tempora est.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, consectetur rerum? Consequatur possimus
+              natus iure. Cumque ullam recusandae fugiat error ab, id, officia illum itaque praesentium minus qui
+              maiores officiis! Temporibus eveniet enim atque aut dolore debitis nam tempora est.
             </span>
           </TextContainer>
         </FirstPostContainer>
         <SecondPostContainer>
           <TextContainer>
-            <h3>Ajutam batranii</h3>
+            <h3>Ajutăm bătrânii</h3>
             <span>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
-              consectetur rerum? Consequatur possimus natus iure. Cumque ullam
-              recusandae fugiat error ab, id, officia illum itaque praesentium
-              minus qui maiores officiis! Temporibus eveniet enim atque aut
-              dolore debitis nam tempora est.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, consectetur rerum? Consequatur possimus
+              natus iure. Cumque ullam recusandae fugiat error ab, id, officia illum itaque praesentium minus qui
+              maiores officiis! Temporibus eveniet enim atque aut dolore debitis nam tempora est.
             </span>
           </TextContainer>
-          <Image
-            src={Charity2}
-            width={360}
-            height={220}
-            style={{ borderRadius: "8px", objectFit: "cover" }}
-          />
+          <Image src={Charity2} width={360} height={220} style={{ borderRadius: "8px", objectFit: "cover" }} />
         </SecondPostContainer>
         <ThirdPostContainer>
-          <Image
-            src={Charity3}
-            width={360}
-            height={220}
-            style={{ borderRadius: "8px", objectFit: "cover" }}
-          />
+          <Image src={Charity3} width={360} height={220} style={{ borderRadius: "8px", objectFit: "cover" }} />
           <TextContainer>
-            <h3>Ajutam bolnavii</h3>
+            <h3>Ajutăm bolnavii</h3>
             <span>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
-              consectetur rerum? Consequatur possimus natus iure. Cumque ullam
-              recusandae fugiat error ab, id, officia illum itaque praesentium
-              minus qui maiores officiis! Temporibus eveniet enim atque aut
-              dolore debitis nam tempora est.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, consectetur rerum? Consequatur possimus
+              natus iure. Cumque ullam recusandae fugiat error ab, id, officia illum itaque praesentium minus qui
+              maiores officiis! Temporibus eveniet enim atque aut dolore debitis nam tempora est.
             </span>
           </TextContainer>
         </ThirdPostContainer>
