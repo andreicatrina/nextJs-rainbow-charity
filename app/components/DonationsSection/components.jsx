@@ -35,7 +35,7 @@ export const LineTitle = styled.div`
 
 export const DonationsDetailsContainer = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 24px;
 `;
@@ -74,5 +74,17 @@ export const OrContainer = styled.div`
   h3 {
     font-size: 24px;
     font-weight: 500;
+  }
+`;
+
+export const ThankYouContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 24px 12px;
+
+  h3 {
+    font-size: 24px;
+    font-weight: 600;
   }
 `;

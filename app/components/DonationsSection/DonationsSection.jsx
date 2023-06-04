@@ -10,6 +10,7 @@ import {
   LineTitle,
   DonationDetailsRight,
   OrContainer,
+  ThankYouContainer,
 } from "./components";
 
 export const DonationsSection = () => {
@@ -22,7 +23,10 @@ export const DonationsSection = () => {
         </DonationsTitleContainer>
         <DonationsDetailsContainer>
           <DonationDetailsLeft>
-            <h3>Ne poți sprijini activitatea donând orice sumă în lei sau euro în conturile:</h3>
+            <h3>
+              Ne poți sprijini activitatea donând orice sumă în lei sau euro în
+              conturile:
+            </h3>
             <p>{`RO37 INGB 0000 0000 0000 0000 - LEI`}</p>
             <p>{`RO32 INGB 0000 0000 0000 0000 - EURO`}</p>
             <h4>{`Asociatia Curcubeul Prieteniei - Impreuna Construim O Lume Mai Buna`}</h4>
@@ -33,10 +37,18 @@ export const DonationsSection = () => {
           </OrContainer>
           <DonationDetailsRight>
             <h3>Dacă ești persoană fizică:</h3>
-            <span>poți alege să redirecționezi 3,5% din impozitul pe anul 2022:</span>
+            <span>
+              poți alege să redirecționezi 3,5% din impozitul pe anul 2022:
+            </span>
             <button>Completeaza declaratia</button>
+            <h3>Dacă ești persoană juridică:</h3>
+            <span>ne poți susține printr-o sponsorizare:</span>
+            <button>Descarcă contractul de sponsorizare</button>
           </DonationDetailsRight>
         </DonationsDetailsContainer>
+        <ThankYouContainer>
+          <h3>Îți mulțumim!</h3>
+        </ThankYouContainer>
       </DonationsContainer>
     </DonationsSectionContainer>
   );

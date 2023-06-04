@@ -4,6 +4,7 @@ import { Main } from "./components";
 import { Header } from "./components/Header/Header";
 import { AboutSection } from "./components/AboutSection/AboutSection";
 import { DonationsSection } from "./components/DonationsSection/DonationsSection";
+import { Footer } from "./components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Header />
       <AboutSection />
       <DonationsSection />
+      <Footer />
     </Main>
   );
 }
