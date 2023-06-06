@@ -54,7 +54,7 @@ export const CasesPhone = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
   font-size: 16px;
   font-weight: 500;
 
@@ -79,7 +79,7 @@ export const DonationsPhone = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
   font-size: 16px;
   font-weight: 500;
 
@@ -105,12 +105,12 @@ export const CasesMail = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
   font-size: 16px;
   font-weight: 500;
 
   a {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 400;
     display: flex;
     align-items: center;
@@ -130,12 +130,12 @@ export const CasesDonations = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
   font-size: 16px;
   font-weight: 500;
 
   a {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 400;
     display: flex;
     align-items: center;
@@ -159,7 +159,7 @@ export const SocialsContainer = styled.div`
   gap: 24px;
 
   h3 {
-    padding: 12px;
+    padding: 0 12px;
   }
 `;
 
@@ -173,7 +173,7 @@ export const FacebookLink = styled.a`
 
   :hover {
     svg {
-      transform: scale(1.2);
+      transform: scale(1.4);
     }
   }
 `;
@@ -186,7 +186,7 @@ export const InstagramLink = styled.a`
   }
   :hover {
     svg {
-      transform: scale(1.2);
+      transform: scale(1.4);
     }
   }
 `;
@@ -199,7 +199,7 @@ export const WhatsappLink = styled.a`
   }
   :hover {
     svg {
-      transform: scale(1.2);
+      transform: scale(1.4);
     }
   }
 `;
@@ -212,7 +212,7 @@ export const GoogleMapsLink = styled.a`
   }
   :hover {
     svg {
-      transform: scale(1.2);
+      transform: scale(1.4);
     }
   }
 `;

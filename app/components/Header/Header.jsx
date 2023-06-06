@@ -46,7 +46,7 @@ export const Header = () => {
             Doneaza <FaDonate />
           </DonateLink>
           <AboutLink href="">Despre Noi</AboutLink>
-          <ContactLink href="">
+          <ContactLink href="tel:+40759676847">
             Contact <BsFillTelephoneFill />
           </ContactLink>
         </MenuContainer>

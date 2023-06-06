@@ -27,8 +27,6 @@ import { FaWhatsapp } from "react-icons/fa";
 import { SiGooglemaps } from "react-icons/si";
 
 export const Footer = () => {
-  const phoneURL = "0747788940";
-
   return (
     <FooterSection>
       <FooterContainer>
@@ -54,29 +52,35 @@ export const Footer = () => {
               E-mail pentru cazuri
               <a href="mailto:asociatiacurcubeulprieteniei@gmail.com">
                 <AiFillMail />
-                blabla@gmail.com
+                asociatiacurcubeulprieteniei@gmail.com
               </a>
             </CasesMail>
             <CasesDonations>
               E-mail pentru donatii
               <a href="mailto:asociatiacurcubeulprieteniei@gmail.com">
                 <AiFillMail />
-                blabla@gmail.com
+                asociatiacurcubeulprieteniei@gmail.com
               </a>
             </CasesDonations>
           </ContactDetailsContainer>
           <SocialsContainer>
             <h3>Socials</h3>
-            <FacebookLink href="https://www.facebook.com/profile.php?id=100087526686228">
+            <FacebookLink
+              href="https://www.facebook.com/profile.php?id=100087526686228"
+              target="_blank"
+            >
               <FaFacebookSquare />
             </FacebookLink>
-            <InstagramLink href="https://www.instagram.com/">
+            <InstagramLink href="https://www.instagram.com/" target="_blank">
               <GrInstagram />
             </InstagramLink>
-            <WhatsappLink href="https://wa.me/40759676847?text=Buna ziua!Cu ce informatii va putem ajuta?">
+            <WhatsappLink
+              href="https://wa.me/40759676847?text=Buna ziua!Cu ce informatii va putem ajuta?"
+              target="_blank"
+            >
               <FaWhatsapp />
             </WhatsappLink>
-            <GoogleMapsLink href="">
+            <GoogleMapsLink href="" target="_blank">
               <SiGooglemaps />
             </GoogleMapsLink>
           </SocialsContainer>
