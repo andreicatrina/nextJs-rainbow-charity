@@ -4,6 +4,7 @@ export const FooterSection = styled.footer`
   width: 100%;
   display: flex;
   justify-content: center;
+  background-color: #b3bbc14d;
 `;
 
 export const FooterContainer = styled.div`
@@ -11,7 +12,7 @@ export const FooterContainer = styled.div`
   max-width: 1600px;
   display: flex;
   flex-direction: column;
-  padding-bottom: 64px;
+  padding: 0 24px 64px 24px;
 `;
 
 export const FooterLineContainer = styled.div`
@@ -32,20 +33,21 @@ export const ContactContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
+
   gap: 32px;
 `;
 
 export const ContactDetailsContainer = styled.div`
   display: flex;
   flex-direction: column;
-
+  align-items: flex-start;
   gap: 12px;
 
   h3 {
     display: flex;
     justify-content: center;
-    padding: 12px;
-    font-size: 18px;
+    padding: 12px 0;
+    font-size: 16px;
     font-weight: 600;
   }
 `;
@@ -53,8 +55,8 @@ export const ContactDetailsContainer = styled.div`
 export const CasesPhone = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  align-items: flex-start;
   font-size: 16px;
   font-weight: 500;
 
@@ -78,8 +80,8 @@ export const CasesPhone = styled.div`
 export const DonationsPhone = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  align-items: flex-start;
   font-size: 16px;
   font-weight: 500;
 
@@ -104,8 +106,8 @@ export const DonationsPhone = styled.div`
 export const CasesMail = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  align-items: flex-start;
   font-size: 16px;
   font-weight: 500;
 
@@ -129,8 +131,8 @@ export const CasesMail = styled.div`
 export const CasesDonations = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  align-items: flex-start;
   font-size: 16px;
   font-weight: 500;
 
@@ -159,7 +161,8 @@ export const SocialsContainer = styled.div`
   gap: 24px;
 
   h3 {
-    padding: 0 12px;
+    padding: 12px 0;
+    font-size: 16px;
   }
 `;
 

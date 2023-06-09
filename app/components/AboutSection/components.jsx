@@ -47,6 +47,15 @@ export const FirstPostContainer = styled.div`
       transform: scale(1.1);
     }
   }
+
+  h3 {
+    /* background-color: #ffb600; */
+    line-height: 32px;
+    border-radius: 4px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 0 8px;
+  }
 `;
 
 export const TextContainer = styled.div`
@@ -56,14 +65,8 @@ export const TextContainer = styled.div`
   max-width: 600px;
   padding: 12px;
   border: 1px solid gray;
-  border-radius: 8px;
+  border-radius: 12px;
   transition: 0.6s;
-
-  h3 {
-    font-size: 24px;
-    font-weight: 600;
-    padding: 0 4px;
-  }
 
   span {
     font-size: 18px;
@@ -89,6 +92,15 @@ export const SecondPostContainer = styled.div`
       transform: scale(1.1);
     }
   }
+
+  h3 {
+    /* background-color: #dc7726; */
+    line-height: 32px;
+    border-radius: 4px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 0 8px;
+  }
 `;
 
 export const ThirdPostContainer = styled.div`
@@ -103,5 +115,14 @@ export const ThirdPostContainer = styled.div`
     :hover {
       transform: scale(1.1);
     }
+  }
+
+  h3 {
+    /* background-color: #ffb600; */
+    line-height: 32px;
+    border-radius: 4px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 0 8px;
   }
 `;

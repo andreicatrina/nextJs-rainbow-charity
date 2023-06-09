@@ -9,6 +9,7 @@ export const DonationsSectionContainer = styled.section`
 export const DonationsContainer = styled.div`
   width: 100%;
   max-width: 1600px;
+  padding: 0 24px;
 `;
 
 export const DonationsTitleContainer = styled.div`

@@ -43,7 +43,7 @@ export const DonationsSection = () => {
             <button>Completeaza declaratia</button>
             <h3>Dacă ești persoană juridică:</h3>
             <span>ne poți susține printr-o sponsorizare:</span>
-            <button>Descarcă contractul de sponsorizare</button>
+            <button>Contract de sponsorizare</button>
           </DonationDetailsRight>
         </DonationsDetailsContainer>
         <ThankYouContainer>

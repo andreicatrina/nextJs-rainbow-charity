@@ -4,10 +4,12 @@ export const HeaderSection = styled.section`
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 500px;
-
+  /* height: 500px; */
   position: relative;
-
+  -webkit-box-shadow: 3px 5px 10px 8.5px #adabab;
+  -moz-box-shadow: 3px 5px 10px 8.5px #adabab;
+  box-shadow: 3px 5px 10px 8.5px #adabab;
+  z-index: 1;
   img {
     /* width: 100%;
     height: 100%;
@@ -57,25 +59,25 @@ export const DonateLink = styled.a`
   gap: 4px;
   border: 1px solid transparent;
   font-size: 16px;
-  font-weight: 400;
-  background-color: #116530;
+  font-weight: 600;
+  background-color: #ffb600;
   color: white;
   border-radius: 6px;
   transition: 0.6s;
 
   svg {
-    color: #ecf87f;
+    color: #fff;
     transition: 0.6s;
   }
 
   :hover {
     background-color: transparent;
-    border: 1px solid #116530;
-    color: #116530;
+    border: 1px solid #ffb600;
+    color: #ffb600;
     transform: scale(1.1);
 
     svg {
-      color: #116530;
+      color: #ffb600;
     }
   }
 `;
@@ -84,15 +86,15 @@ export const AboutLink = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #116530;
+  border: 1px solid #ffb600;
   border-radius: 6px;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   transition: 0.6s;
 
   :hover {
-    background-color: #116530;
-    color: white;
+    background-color: #ffb600;
+    color: #fff;
     transform: scale(1.1);
   }
 `;
@@ -102,18 +104,20 @@ export const ContactLink = styled.a`
   justify-content: center;
   align-items: center;
   gap: 4px;
-  border: 1px solid #116530;
+  border: 1px solid #ffb600;
   border-radius: 6px;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   transition: 0.6s;
 
   svg {
     transition: 0.6s;
+    width: 16px;
+    height: 16px;
   }
 
   :hover {
-    background-color: #116530;
+    background-color: #ffb600;
     color: white;
     transform: scale(1.1);
 
