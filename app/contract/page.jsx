@@ -18,7 +18,7 @@ export default function ContractPage() {
       <ContractSection>
         <ContractSectionContainer>
           <TitleContainer>
-            <h3>Fă o #faptăbună</h3>
+            <h3>Fă o #faptăBună</h3>
             <span>Donația ta contează!</span>
           </TitleContainer>
           <CardsContainer>

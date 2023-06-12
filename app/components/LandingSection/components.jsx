@@ -57,7 +57,7 @@ export const TitleContainer = styled.div`
 export const Title = styled.h3`
   font-size: 64px;
   font-weight: 700;
-  color: #ffb600;
+  color: #4a4f54;
   animation: fadeIn 5s;
 
   @keyframes fadeIn {

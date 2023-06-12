@@ -19,6 +19,7 @@ export const LandingSection = () => {
           width: "100%",
           height: "100%",
           objectFit: "cover",
+          // transform: "scale(2)",
           // filter: "blur(1px)",
         }}
       />

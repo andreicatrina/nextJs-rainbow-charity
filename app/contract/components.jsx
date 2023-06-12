@@ -40,9 +40,16 @@ export const ContractContainer = styled.div`
     border-radius: 8px;
     font-size: 18px;
     font-weight: 600;
+    font-family: "Rubik", sans-serif;
     color: #fff;
     border: none;
     cursor: pointer;
+    transition: 0.6s;
+
+    :hover {
+      color: #4a4f54;
+      background-color: #fff;
+    }
   }
 `;
 export const LinksContainer = styled.div`
@@ -81,9 +88,16 @@ export const DonationContainer = styled.div`
     border-radius: 8px;
     font-size: 18px;
     font-weight: 600;
+    font-family: "Rubik", sans-serif;
     color: #fff;
     border: none;
     cursor: pointer;
+    transition: 0.6s;
+
+    :hover {
+      color: #4a4f54;
+      background-color: #fff;
+    }
   }
 `;
 

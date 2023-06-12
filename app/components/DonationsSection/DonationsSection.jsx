@@ -12,13 +12,14 @@ import {
   OrContainer,
   ThankYouContainer,
 } from "./components";
+import Link from "next/link";
 
 export const DonationsSection = () => {
   return (
     <DonationsSectionContainer>
       <DonationsContainer>
         <DonationsTitleContainer>
-          <LineTitle></LineTitle>
+          {/* <LineTitle></LineTitle> */}
           <h2>Donează și salvează</h2>
         </DonationsTitleContainer>
         <DonationsDetailsContainer>
@@ -29,25 +30,32 @@ export const DonationsSection = () => {
             </h3>
             <p>{`RO37 INGB 0000 0000 0000 0000 - LEI`}</p>
             <p>{`RO32 INGB 0000 0000 0000 0000 - EURO`}</p>
-            <h4>{`Asociatia Curcubeul Prieteniei - Impreuna Construim O Lume Mai Buna`}</h4>
+            <h4>{`Asociatia Curcubeul Prieteniei`}</h4>
             <p>C.U.I. 40000000</p>
           </DonationDetailsLeft>
-          <OrContainer>
-            <h3>SAU</h3>
-          </OrContainer>
+          <OrContainer></OrContainer>
           <DonationDetailsRight>
             <h3>Dacă ești persoană fizică:</h3>
             <span>
               poți alege să redirecționezi 3,5% din impozitul pe anul 2022:
             </span>
-            <button>Completeaza declaratia</button>
+            <Link href="/contract">
+              <button>Completeaza declaratia</button>
+            </Link>
             <h3>Dacă ești persoană juridică:</h3>
             <span>ne poți susține printr-o sponsorizare:</span>
-            <button>Contract de sponsorizare</button>
+            <Link href="/contract">
+              <button>Contract de sponsorizare</button>
+            </Link>
           </DonationDetailsRight>
         </DonationsDetailsContainer>
         <ThankYouContainer>
           <h3>Îți mulțumim!</h3>
+          <p>
+            Încercăm să normalizăm donațiile, așa că te rugăm să folosești{" "}
+            <span>#faptăBună</span> în postările tale legate de donațiile făcute
+            la noi{" "}
+          </p>
         </ThankYouContainer>
       </DonationsContainer>
     </DonationsSectionContainer>
