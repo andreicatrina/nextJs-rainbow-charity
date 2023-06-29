@@ -4,7 +4,7 @@ export const FooterSection = styled.footer`
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #b3bbc14d;
+  background-color: #fff;
 `;
 
 export const FooterContainer = styled.div`
@@ -12,7 +12,7 @@ export const FooterContainer = styled.div`
   max-width: 1600px;
   display: flex;
   flex-direction: column;
-  padding: 0 24px 64px 24px;
+  padding: 24px 24px 64px 24px;
 `;
 
 export const FooterLineContainer = styled.div`
@@ -22,7 +22,7 @@ export const FooterLineContainer = styled.div`
 `;
 
 export const FooterLine = styled.div`
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #d8dcdf;
   width: 100%;
   max-width: 1200px;
   height: 48px;
@@ -42,13 +42,16 @@ export const ContactDetailsContainer = styled.div`
   flex-direction: column;
   align-items: flex-start;
   gap: 12px;
+  padding: 12px;
 
   h3 {
     display: flex;
     justify-content: center;
     padding: 12px 0;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.7);
   }
 `;
 
@@ -57,23 +60,22 @@ export const CasesPhone = styled.div`
   flex-direction: column;
   /* justify-content: center; */
   align-items: flex-start;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 500;
+  color: rgba(0, 0, 0, 0.7);
 
   a {
-    font-size: 18px;
+    font-size: 12px;
     font-weight: 400;
     display: flex;
     align-items: center;
     gap: 8px;
-
     padding: 2px 6px;
-
     margin-top: 8px;
 
     svg {
-      width: 16px;
-      height: 16px;
+      width: 14px;
+      height: 14px;
     }
   }
 `;
@@ -82,23 +84,22 @@ export const DonationsPhone = styled.div`
   flex-direction: column;
   /* justify-content: center; */
   align-items: flex-start;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 500;
+  color: rgba(0, 0, 0, 0.7);
 
   a {
-    font-size: 18px;
+    font-size: 12px;
     font-weight: 400;
     display: flex;
     align-items: center;
     gap: 8px;
-
     padding: 2px 6px;
-
     margin-top: 8px;
 
     svg {
-      width: 16px;
-      height: 16px;
+      width: 14px;
+      height: 14px;
     }
   }
 `;
@@ -108,11 +109,12 @@ export const CasesMail = styled.div`
   flex-direction: column;
   /* justify-content: center; */
   align-items: flex-start;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 500;
+  color: rgba(0, 0, 0, 0.7);
 
   a {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
     display: flex;
     align-items: center;
@@ -123,8 +125,8 @@ export const CasesMail = styled.div`
     margin-top: 8px;
 
     svg {
-      width: 16px;
-      height: 16px;
+      width: 14px;
+      height: 14px;
     }
   }
 `;
@@ -133,11 +135,12 @@ export const CasesDonations = styled.div`
   flex-direction: column;
   /* justify-content: center; */
   align-items: flex-start;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 500;
+  color: rgba(0, 0, 0, 0.7);
 
   a {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
     display: flex;
     align-items: center;
@@ -148,8 +151,8 @@ export const CasesDonations = styled.div`
     margin-top: 8px;
 
     svg {
-      width: 16px;
-      height: 16px;
+      width: 14px;
+      height: 14px;
     }
   }
 `;
@@ -159,18 +162,22 @@ export const SocialsContainer = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 24px;
+  padding: 12px;
 
   h3 {
     padding: 12px 0;
     font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.7);
   }
 `;
 
 export const FacebookLink = styled.a`
   svg {
     color: #1877f2;
-    width: 32px;
-    height: 32px;
+    width: 24px;
+    height: 24px;
     transition: 0.6s;
   }
 
@@ -183,8 +190,8 @@ export const FacebookLink = styled.a`
 export const InstagramLink = styled.a`
   svg {
     color: #c32aa3;
-    width: 32px;
-    height: 32px;
+    width: 24px;
+    height: 24px;
     transition: 0.6s;
   }
   :hover {
@@ -196,8 +203,8 @@ export const InstagramLink = styled.a`
 export const WhatsappLink = styled.a`
   svg {
     color: #25d366;
-    width: 32px;
-    height: 32px;
+    width: 24px;
+    height: 24px;
     transition: 0.6s;
   }
   :hover {
@@ -209,13 +216,29 @@ export const WhatsappLink = styled.a`
 export const GoogleMapsLink = styled.a`
   svg {
     color: #ea4335;
-    width: 32px;
-    height: 32px;
+    width: 24px;
+    height: 24px;
     transition: 0.6s;
   }
   :hover {
     svg {
       transform: scale(1.4);
     }
+  }
+`;
+
+export const SocialsLinksContainer = styled.div`
+  display: flex;
+  gap: 12px;
+`;
+
+export const FooterCompanyDetails = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+
+  p {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.4);
   }
 `;

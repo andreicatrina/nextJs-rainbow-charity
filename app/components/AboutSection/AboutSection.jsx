@@ -6,6 +6,7 @@ import {
   AboutSectionContainer,
   AboutUsTitleContainer,
   FirstPostContainer,
+  FourthPostContainer,
   LineTitle,
   SecondPostContainer,
   TextContainer,
@@ -16,6 +17,7 @@ import Image from "next/image";
 import Charity1 from "../../../public/charity1.jpg";
 import Charity2 from "../../../public/charity2.jpg";
 import Charity3 from "../../../public/charity3.jpg";
+import Charity5 from "../../../public/charity5.jpg";
 
 export const AboutSection = () => {
   return (
@@ -56,7 +58,7 @@ export const AboutSection = () => {
         </FirstPostContainer>
         <SecondPostContainer>
           <TextContainer>
-            <h3>Ne pasa de bătrâni</h3>
+            <h3>Ne pasă de bătrâni</h3>
             <span>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam
               laudantium explicabo obcaecati odio iusto incidunt! Amet similique
@@ -81,7 +83,7 @@ export const AboutSection = () => {
               objectFit: "cover",
               width: "100%",
               maxWidth: "480px",
-              filter: "grayscale(80)",
+              filter: "grayscale(0)",
             }}
           />
         </SecondPostContainer>
@@ -98,7 +100,7 @@ export const AboutSection = () => {
             }}
           />
           <TextContainer>
-            <h3>Luptam cu suferinta</h3>
+            <h3>Luptăm cu suferința</h3>
             <span>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Exercitationem, aspernatur beatae. Ad assumenda id perspiciatis
@@ -115,6 +117,36 @@ export const AboutSection = () => {
             </span>
           </TextContainer>
         </ThirdPostContainer>
+        <FourthPostContainer>
+          <TextContainer>
+            <h3>Educația lor este esențială</h3>
+            <span>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Exercitationem, aspernatur beatae. Ad assumenda id perspiciatis
+              beatae? Natus id esse, at exercitationem repellat quaerat ipsum
+              libero dicta ab. Similique, quas fugiat aspernatur minus, velit
+              consequatur aperiam possimus alias dicta amet quos incidunt sunt
+              quod suscipit et recusandae, quia mollitia voluptate molestias.
+              Nemo, beatae libero error dolores recusandae quod nobis officia
+              corporis labore hic, soluta nostrum sit repellat aliquid qui
+              maxime odit distinctio modi id perferendis? Itaque corrupti,
+              nostrum fuga, quidem consectetur corporis maxime, iure repudiandae
+              reiciendis eos molestias laboriosam. Fuga architecto iusto eius
+              perspiciatis quod, porro in quos molestias sed blanditiis.
+            </span>
+          </TextContainer>
+          <Image
+            src={Charity5}
+            width={480}
+            height={360}
+            style={{
+              borderRadius: "8px",
+              objectFit: "cover",
+              width: "100%",
+              maxWidth: "480px",
+            }}
+          />
+        </FourthPostContainer>
       </AboutContainer>
     </AboutSectionContainer>
   );

@@ -17,6 +17,7 @@ import {
 import Logo from "../../../public/logo1.png";
 import { FaDonate } from "react-icons/fa";
 import { BsFillTelephoneFill } from "react-icons/bs";
+import Link from "next/link";
 
 export const Header = () => {
   return (
@@ -24,7 +25,7 @@ export const Header = () => {
       <HeaderContainer>
         <LogoContainer>
           {/* <Image src={Logo} alt="" /> */}
-          Logo
+          <Link href="/">Logo</Link>
         </LogoContainer>
         <MenuContainer>
           <DonateLink href="">

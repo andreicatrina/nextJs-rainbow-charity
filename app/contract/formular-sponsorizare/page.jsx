@@ -22,7 +22,7 @@ export default function Formpage() {
       <FormPageSection>
         <FormPageContainer>
           <h2>
-            Completeaza datele firmei si noi iti vom genera automat contractul
+            Completează datele firmei și noi îți vom genera automat contractul
             de sponsorizare
           </h2>
           <Form action="">
@@ -42,14 +42,14 @@ export default function Formpage() {
               <label htmlFor="">Cod Postal</label>
               <input type="text" placeholder="" />
 
-              <label htmlFor="">Judet</label>
+              <label htmlFor="">Județ</label>
               <input type="text" placeholder="" />
 
-              <label htmlFor="">Oras</label>
+              <label htmlFor="">Oraș</label>
               <input type="text" placeholder="" />
             </CompanyDetailsDiv>
             <h3>Reprezentant Legal</h3>
-            <p>Aceste informatii vor aparea in contract</p>
+            <p>Aceste informații vor apărea în contract</p>
             <LegalRepresentativeContainer>
               <label htmlFor="">Titlu</label>
               <select name="" id="">
@@ -69,7 +69,7 @@ export default function Formpage() {
               <label htmlFor="">Telefon</label>
               <input type="tel" placeholder="" />
 
-              <label htmlFor="">Pozitia in cadrul companiei</label>
+              <label htmlFor="">Poziția în cadrul companiei</label>
               <select name="" id="">
                 <option value="">Administrator</option>
                 <option value="">Director</option>
@@ -84,7 +84,7 @@ export default function Formpage() {
             <h3>Date Bancare</h3>
             <p>
               Datele introduse vor fi folosite atât în contract, cât și pentru a
-              identifica plățile în platforma noastră.
+              identifica plățile în platforma noastră
             </p>
             <BankDetailsContainer>
               <label htmlFor="">Cont IBAN</label>
@@ -92,7 +92,7 @@ export default function Formpage() {
               <label htmlFor="">Deschis la banca</label>
               <input type="text" placeholder="Nume Banca" />
 
-              <h3>Completeaza data si suma</h3>
+              <h3>Completează data și suma</h3>
 
               <label htmlFor="">Data contractului</label>
               <input type="date" placeholder="" />
@@ -103,7 +103,7 @@ export default function Formpage() {
               <button>Finalizare</button>
             </SubmitButtonContainer>
           </Form>
-          <h2>Iti multumim pentru contributia facuta!</h2>
+          <h2>Îți mulțumim pentru contribuția făcută!</h2>
         </FormPageContainer>
       </FormPageSection>
       <Footer />

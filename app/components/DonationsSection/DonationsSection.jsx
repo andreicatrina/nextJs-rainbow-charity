@@ -30,7 +30,7 @@ export const DonationsSection = () => {
             </h3>
             <p>{`RO37 INGB 0000 0000 0000 0000 - LEI`}</p>
             <p>{`RO32 INGB 0000 0000 0000 0000 - EURO`}</p>
-            <h4>{`Asociatia Curcubeul Prieteniei`}</h4>
+            <h4>{`Asociația "Curcubeul Prieteniei"`}</h4>
             <p>C.U.I. 40000000</p>
           </DonationDetailsLeft>
           <OrContainer></OrContainer>
@@ -40,7 +40,7 @@ export const DonationsSection = () => {
               poți alege să redirecționezi 3,5% din impozitul pe anul 2022:
             </span>
             <Link href="/contract">
-              <button>Completeaza declaratia</button>
+              <button>Completează declarația</button>
             </Link>
             <h3>Dacă ești persoană juridică:</h3>
             <span>ne poți susține printr-o sponsorizare:</span>

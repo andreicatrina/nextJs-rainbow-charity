@@ -12,9 +12,9 @@ export const AboutContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 1800px;
   width: 100%;
   max-width: 1600px;
+  padding: 24px;
 `;
 export const LineTitle = styled.div`
   width: 100%;
@@ -81,6 +81,13 @@ export const SecondPostContainer = styled.div`
 `;
 
 export const ThirdPostContainer = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 64px 24px;
+  gap: 48px;
+`;
+export const FourthPostContainer = styled.div`
   display: flex;
   justify-content: flex-start;
   width: 100%;
