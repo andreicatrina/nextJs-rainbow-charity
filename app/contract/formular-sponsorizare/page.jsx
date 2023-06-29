@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 
 import { Header } from "../../components/Header/Header";
 import { Main } from "../../components";
@@ -16,49 +16,96 @@ import {
 } from "./components";
 
 export default function Formpage() {
+  const [companyNo, setCompanyNo] = useState("");
+  const [companyName, setCompanyName] = useState("");
+  const [companyReg, setCompanyReg] = useState("");
+  const [companyAddress, setCompanyAddress] = useState("");
+  const [postalCode, setPostalCode] = useState("");
+  const [county, setCounty] = useState("");
+  const [city, setCity] = useState("");
+
+  const [title, setTitle] = useState("");
+
+  const [lastName, setLastName] = useState("");
+
+  function onChangeCompanyNo(e) {
+    setCompanyNo(e.currentTarget.value);
+    // console.log(e.currentTarget.value);
+  }
+
+  function onChangeCompanyName(e) {
+    setCompanyName(e.currentTarge.value);
+  }
+
+  function onChangeReg(e) {
+    setCompanyReg(e.currentTarget.value);
+  }
+
+  function onChangeCompanyAddress(e) {
+    setCompanyAddress(e.currentTarget.value);
+  }
+
+  function onChangePostalCode(e) {
+    setPostalCode(e.currentTarget.value);
+  }
+
+  function onChangeCounty(e) {
+    setCounty(e.currentTarget.value);
+  }
+
+  function onChangeCity(e) {
+    setCity(e.currentTarget.value);
+  }
+
+  function onChangeTitle(e) {
+    setTitle(e.target.value);
+    console.log(e.target.value);
+  }
+
+  function onChangeLastName(e) {
+    setName(e.currentTarget.value);
+  }
+
   return (
     <Main>
       <Header />
       <FormPageSection>
         <FormPageContainer>
-          <h2>
-            Completează datele firmei și noi îți vom genera automat contractul
-            de sponsorizare
-          </h2>
+          <h2>Completează datele firmei și noi îți vom genera automat contractul de sponsorizare</h2>
           <Form action="">
             <CompanyDetailsDiv>
               <label htmlFor="">CUI Firma</label>
-              <input type="text" placeholder="CUI" />
+              <input value={companyNo} type="text" placeholder="CUI" onChange={onChangeCompanyNo} />
 
               <label htmlFor="">Nume companie</label>
-              <input type="text" placeholder="Ex: S.C. ABC S.R.L." />
+              <input value={companyName} type="text" placeholder="Ex: S.C. ABC S.R.L." onChange={onChangeCompanyName} />
 
               <label htmlFor="">Nr. Reg. Com.</label>
-              <input type="text" placeholder="Ex: J17/1729/2018" />
+              <input type="text" placeholder="Ex: J17/1729/2018" onChange={onChangeReg} />
 
               <label htmlFor="">Adresa</label>
-              <input type="text" placeholder="Strada, Nr." />
+              <input type="text" placeholder="Strada, Nr." onChange={onChangeCompanyAddress} />
 
               <label htmlFor="">Cod Postal</label>
-              <input type="text" placeholder="" />
+              <input type="text" placeholder="" onChange={onChangePostalCode} />
 
               <label htmlFor="">Județ</label>
-              <input type="text" placeholder="" />
+              <input type="text" placeholder="" onChange={onChangeCounty} />
 
               <label htmlFor="">Oraș</label>
-              <input type="text" placeholder="" />
+              <input type="text" placeholder="" onChange={onChangeCity} />
             </CompanyDetailsDiv>
             <h3>Reprezentant Legal</h3>
             <p>Aceste informații vor apărea în contract</p>
             <LegalRepresentativeContainer>
               <label htmlFor="">Titlu</label>
-              <select name="" id="">
-                <option value="">Dna.</option>
-                <option value="">Dl.</option>
+              <select name="" id="" onChange={onChangeTitle}>
+                <option value="Dna.">Dna.</option>
+                <option value="Dl.">Dl.</option>
               </select>
 
               <label htmlFor="">Nume</label>
-              <input type="text" placeholder="" />
+              <input type="text" placeholder="" onChange={onChangeLastName} />
 
               <label htmlFor="">Prenume</label>
               <input type="text" placeholder="" />
@@ -83,8 +130,7 @@ export default function Formpage() {
             </LegalRepresentativeContainer>
             <h3>Date Bancare</h3>
             <p>
-              Datele introduse vor fi folosite atât în contract, cât și pentru a
-              identifica plățile în platforma noastră
+              Datele introduse vor fi folosite atât în contract, cât și pentru a identifica plățile în platforma noastră
             </p>
             <BankDetailsContainer>
               <label htmlFor="">Cont IBAN</label>
