@@ -23,10 +23,16 @@ export default function Formpage() {
   const [postalCode, setPostalCode] = useState("");
   const [county, setCounty] = useState("");
   const [city, setCity] = useState("");
-
   const [title, setTitle] = useState("");
-
   const [lastName, setLastName] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [companyPosition, setCompanyPosition] = useState("");
+  const [bankAccount, setBankAccount] = useState("");
+  const [bankName, setBankName] = useState("");
+  const [date, setDate] = useState("");
+  const [amount, setAmount] = useState("");
 
   function onChangeCompanyNo(e) {
     setCompanyNo(e.currentTarget.value);
@@ -63,8 +69,61 @@ export default function Formpage() {
   }
 
   function onChangeLastName(e) {
-    setName(e.currentTarget.value);
+    setLastName(e.currentTarget.value);
   }
+
+  function onChangeFirstName(e) {
+    setFirstName(e.currentTarget.value);
+  }
+
+  function onChangeEmail(e) {
+    setEmail(e.currentTarget.value);
+  }
+
+  function onChangePhoneNumber(e) {
+    setPhoneNumber(e.currentTarget.value);
+  }
+
+  function onChangeCompanyPosition(e) {
+    setCompanyPosition(e.target.value);
+    console.log(e.target.value);
+  }
+
+  function onChangeBankAccount(e) {
+    setBankAccount(e.currentTarget.value);
+  }
+
+  function onChangeBankName(e) {
+    setBankName(e.currentTarget.value);
+  }
+
+  function onChangeContractDate(e) {
+    setDate(e.currentTarget.value);
+    console.log(e.currentTarget.value);
+  }
+
+  function onChangeAmount(e) {
+    setAmount(e.currentTarget.value);
+  }
+
+  const formDetails = {
+    companyNo: companyNo,
+    companyReg: companyReg,
+    companyAddress: companyAddress,
+    postalCode: postalCode,
+    county: county,
+    city: city,
+    title: title,
+    lastName: lastName,
+    firstName: firstName,
+    email: email,
+    phoneNumber: phoneNumber,
+    companyPosition: companyPosition,
+    bankAccount: bankAccount,
+    bankName: bankName,
+    date: date,
+    amount: amount,
+  };
 
   return (
     <Main>
@@ -81,51 +140,51 @@ export default function Formpage() {
               <input value={companyName} type="text" placeholder="Ex: S.C. ABC S.R.L." onChange={onChangeCompanyName} />
 
               <label htmlFor="">Nr. Reg. Com.</label>
-              <input type="text" placeholder="Ex: J17/1729/2018" onChange={onChangeReg} />
+              <input value={companyReg} type="text" placeholder="Ex: J17/1729/2018" onChange={onChangeReg} />
 
               <label htmlFor="">Adresa</label>
-              <input type="text" placeholder="Strada, Nr." onChange={onChangeCompanyAddress} />
+              <input value={companyAddress} type="text" placeholder="Strada, Nr." onChange={onChangeCompanyAddress} />
 
               <label htmlFor="">Cod Postal</label>
-              <input type="text" placeholder="" onChange={onChangePostalCode} />
+              <input value={postalCode} type="text" placeholder="" onChange={onChangePostalCode} />
 
               <label htmlFor="">Județ</label>
-              <input type="text" placeholder="" onChange={onChangeCounty} />
+              <input value={county} type="text" placeholder="" onChange={onChangeCounty} />
 
               <label htmlFor="">Oraș</label>
-              <input type="text" placeholder="" onChange={onChangeCity} />
+              <input value={city} type="text" placeholder="" onChange={onChangeCity} />
             </CompanyDetailsDiv>
             <h3>Reprezentant Legal</h3>
             <p>Aceste informații vor apărea în contract</p>
             <LegalRepresentativeContainer>
               <label htmlFor="">Titlu</label>
-              <select name="" id="" onChange={onChangeTitle}>
+              <select value={title} name="" id="" onChange={onChangeTitle}>
                 <option value="Dna.">Dna.</option>
                 <option value="Dl.">Dl.</option>
               </select>
 
               <label htmlFor="">Nume</label>
-              <input type="text" placeholder="" onChange={onChangeLastName} />
+              <input value={lastName} type="text" placeholder="" onChange={onChangeLastName} />
 
               <label htmlFor="">Prenume</label>
-              <input type="text" placeholder="" />
+              <input value={firstName} type="text" placeholder="" onChange={onChangeFirstName} />
 
               <label htmlFor="">Email</label>
-              <input type="email" placeholder="" />
+              <input value={email} type="email" placeholder="" onChange={onChangeEmail} />
 
               <label htmlFor="">Telefon</label>
-              <input type="tel" placeholder="" />
+              <input value={phoneNumber} type="tel" placeholder="" onChange={onChangePhoneNumber} />
 
               <label htmlFor="">Poziția în cadrul companiei</label>
-              <select name="" id="">
-                <option value="">Administrator</option>
-                <option value="">Director</option>
-                <option value="">Director General</option>
-                <option value="">Director Executiv</option>
-                <option value="">Asociat</option>
-                <option value="">Presedinte</option>
-                <option value="">Vicepresedinte</option>
-                <option value="">Reprezentant Legal</option>
+              <select value={companyPosition} name="" id="" onChange={onChangeCompanyPosition}>
+                <option value="Administrator">Administrator</option>
+                <option value="Director">Director</option>
+                <option value="Director General">Director General</option>
+                <option value="Director Executiv">Director Executiv</option>
+                <option value="Asociat">Asociat</option>
+                <option value="Presedinte">Presedinte</option>
+                <option value="Vicepresedinte">Vicepresedinte</option>
+                <option value="Reprezentant Legal">Reprezentant Legal</option>
               </select>
             </LegalRepresentativeContainer>
             <h3>Date Bancare</h3>
@@ -134,16 +193,16 @@ export default function Formpage() {
             </p>
             <BankDetailsContainer>
               <label htmlFor="">Cont IBAN</label>
-              <input type="text" placeholder="" />
+              <input value={bankAccount} type="text" placeholder="" onChange={onChangeBankAccount} />
               <label htmlFor="">Deschis la banca</label>
-              <input type="text" placeholder="Nume Banca" />
+              <input value={bankName} type="text" placeholder="Nume Banca" onChange={onChangeBankName} />
 
               <h3>Completează data și suma</h3>
 
               <label htmlFor="">Data contractului</label>
-              <input type="date" placeholder="" />
+              <input value={date} type="date" placeholder="" onChange={onChangeContractDate} />
               <label htmlFor="">Suma din contract</label>
-              <input type="number" placeholder="" />
+              <input value={amount} placeholder="" onChange={onChangeAmount} />
             </BankDetailsContainer>
             <SubmitButtonContainer>
               <button>Finalizare</button>
@@ -156,3 +215,21 @@ export default function Formpage() {
     </Main>
   );
 }
+
+// const [companyNo, setCompanyNo] = useState("");
+//   const [companyName, setCompanyName] = useState("");
+//   const [companyReg, setCompanyReg] = useState("");
+//   const [companyAddress, setCompanyAddress] = useState("");
+//   const [postalCode, setPostalCode] = useState("");
+//   const [county, setCounty] = useState("");
+//   const [city, setCity] = useState("");
+//   const [title, setTitle] = useState("");
+//   const [lastName, setLastName] = useState("");
+//   const [firstName, setFirstName] = useState("");
+//   const [email, setEmail] = useState("");
+//   const [phoneNumber, setPhoneNumber] = useState("");
+//   const [companyPosition, setCompanyPosition] = useState("");
+//   const [bankAccount, setBankAccount] = useState("");
+//   const [bankName, setBankName] = useState("");
+//   const [date, setDate] = useState("");
+//   const [amount, setAmount] = useState("");
