@@ -1,3 +1,5 @@
+'use client';
+
 import {
   ContractSectionContainer,
   ContractSection,
@@ -10,9 +12,17 @@ import {
 } from "./components";
 import { Header } from "../components/Header/Header";
 import { Footer } from "../components/Footer/Footer";
+import fileDownload from "js-file-download";
 import Link from "next/link";
+import axios from "axios";
 
 export default function ContractPage() {
+
+  async function onClick() {
+    const response = await axios.get("http://localhost:3001/contract/download", {responseType: 'blob'});
+    fileDownload(response.data, "contract.pdf")
+  }
+
   return (
     <Main>
       <Header />
@@ -21,6 +31,7 @@ export default function ContractPage() {
           <TitleContainer>
             <h3>Fă o #faptăBună</h3>
             <span>Donația ta contează!</span>
+            <button onClick={onClick}>contract</button>
           </TitleContainer>
           <CardsContainer>
             <ContractContainer>
