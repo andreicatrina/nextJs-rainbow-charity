@@ -15,6 +15,10 @@ export const AboutContainer = styled.div`
   width: 100%;
   max-width: 1600px;
   padding: 24px;
+
+  @media (max-width: 1000px) {
+    padding: 0;
+  }
 `;
 export const LineTitle = styled.div`
   width: 100%;
@@ -38,6 +42,27 @@ export const AboutUsTitleContainer = styled.div`
     font-weight: 700;
     color: #4a4f54;
   }
+
+  @media (max-width: 1000px) {
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+
+  @media (max-width: 800px) {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    h2 {
+      font-size: 28px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    h2 {
+      font-size: 20px;
+    }
+  }
 `;
 
 export const FirstPostContainer = styled.div`
@@ -46,15 +71,37 @@ export const FirstPostContainer = styled.div`
   width: 100%;
   padding: 64px 24px;
   gap: 48px;
+
+  img {
+    border-radius: 8px;
+  }
+
+  @media (max-width: 1000px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 0;
+
+    img {
+      width: 100%;
+      max-width: 600px;
+      height: 240px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    img {
+      border-radius: 0;
+    }
+  }
 `;
 
 export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  /* max-width: 600px; */
   padding: 12px;
-  /* border: 1px solid gray; */
   border-radius: 12px;
   transition: 0.6s;
 
@@ -70,6 +117,32 @@ export const TextContainer = styled.div`
     font-weight: 500;
     padding: 12px 4px;
   }
+
+  @media (max-width: 1300px) {
+    span {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    h3 {
+      font-size: 28px;
+    }
+
+    span {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    h3 {
+      font-size: 20px;
+    }
+
+    span {
+      font-size: 12px;
+    }
+  }
 `;
 
 export const SecondPostContainer = styled.div`
@@ -78,6 +151,33 @@ export const SecondPostContainer = styled.div`
   width: 100%;
   padding: 64px 24px;
   gap: 48px;
+
+  img {
+    border-radius: 8px;
+    width: 100%;
+    max-width: 480px;
+  }
+
+  @media (max-width: 1000px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 0;
+
+    img {
+      width: 100%;
+      max-width: 600px;
+      height: 240px;
+      order: -1;
+    }
+  }
+
+  @media (max-width: 600px) {
+    img {
+      border-radius: 0;
+    }
+  }
 `;
 
 export const ThirdPostContainer = styled.div`
@@ -86,6 +186,32 @@ export const ThirdPostContainer = styled.div`
   width: 100%;
   padding: 64px 24px;
   gap: 48px;
+
+  img {
+    border-radius: 8px;
+    width: 100%;
+    max-width: 480px;
+  }
+
+  @media (max-width: 1000px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 0;
+
+    img {
+      width: 100%;
+      max-width: 600px;
+      height: 240px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    img {
+      border-radius: 0;
+    }
+  }
 `;
 export const FourthPostContainer = styled.div`
   display: flex;
@@ -93,4 +219,31 @@ export const FourthPostContainer = styled.div`
   width: 100%;
   padding: 64px 24px;
   gap: 48px;
+
+  img {
+    border-radius: 8px;
+    width: 100%;
+    max-width: 480px;
+  }
+
+  @media (max-width: 1000px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 0 0 24px 0;
+
+    img {
+      width: 100%;
+      max-width: 600px;
+      height: 240px;
+      order: -1;
+    }
+  }
+
+  @media (max-width: 600px) {
+    img {
+      border-radius: 0;
+    }
+  }
 `;

@@ -18,8 +18,11 @@ export const ContractSectionContainer = styled.div`
   padding: 24px;
 `;
 export const ContractContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100%;
-  height: 260px;
+  height: 280px;
   padding: 32px;
   background-color: #88959e;
   border-radius: 8px;
@@ -28,8 +31,9 @@ export const ContractContainer = styled.div`
     font-size: 20px;
     font-weight: 600;
     line-height: 28px;
-    padding-bottom: 48px;
+    padding-bottom: 32px;
     color: #fff;
+    height: 140px;
   }
 
   button {
@@ -51,6 +55,19 @@ export const ContractContainer = styled.div`
       background-color: #fff;
     }
   }
+
+  @media (max-width: 1100px) {
+    padding: 24px;
+    h3 {
+      font-size: 18px;
+    }
+
+    button {
+      width: 220px;
+      height: 40px;
+      font-size: 16px;
+    }
+  }
 `;
 export const LinksContainer = styled.div`
   display: flex;
@@ -66,8 +83,11 @@ export const LinksContainer = styled.div`
 `;
 
 export const DonationContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100%;
-  height: 260px;
+  height: 280px;
   padding: 32px;
   background-color: #fa5a0a;
   border-radius: 8px;
@@ -76,8 +96,9 @@ export const DonationContainer = styled.div`
     font-size: 20px;
     font-weight: 600;
     line-height: 28px;
-    padding-bottom: 48px;
+    padding-bottom: 32px;
     color: #fff;
+    height: 140px;
   }
 
   button {
@@ -97,6 +118,19 @@ export const DonationContainer = styled.div`
     :hover {
       color: #4a4f54;
       background-color: #fff;
+    }
+  }
+
+  @media (max-width: 1100px) {
+    padding: 24px;
+    h3 {
+      font-size: 18px;
+    }
+
+    button {
+      width: 220px;
+      height: 40px;
+      font-size: 16px;
     }
   }
 `;

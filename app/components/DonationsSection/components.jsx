@@ -7,6 +7,13 @@ export const DonationsSectionContainer = styled.section`
   width: 100%;
   height: 800px;
   background-color: #ffb600;
+
+  @media (max-width: 1000px) {
+    height: 640px;
+  }
+  @media (max-width: 700px) {
+    height: 800px;
+  }
 `;
 
 export const DonationsContainer = styled.div`
@@ -29,6 +36,21 @@ export const DonationsTitleContainer = styled.div`
     font-weight: 700;
     color: #fff;
   }
+
+  @media (max-width: 1000px) {
+    margin-bottom: 40px;
+    h2 {
+      font-size: 32px;
+    }
+  }
+
+  @media (max-width: 700px) {
+    margin-bottom: 20px;
+    padding: 20px 12px;
+    h2 {
+      font-size: 20px;
+    }
+  }
 `;
 
 export const LineTitle = styled.div`
@@ -44,6 +66,11 @@ export const DonationsDetailsContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   gap: 24px;
+
+  @media (max-width: 700px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 export const DonationDetailsLeft = styled.div`
@@ -70,6 +97,45 @@ export const DonationDetailsLeft = styled.div`
   p {
     font-size: 18px;
     color: #fff;
+  }
+
+  @media (max-width: 1000px) {
+    padding: 20px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    h3 {
+      font-size: 16px;
+    }
+
+    h4 {
+      font-size: 14px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 700px) {
+    padding: 12px;
+    height: 220px;
+    width: 100%;
+    max-width: 400px;
+    h3 {
+      font-size: 14px;
+    }
+
+    h4 {
+      font-size: 12px;
+    }
+
+    p {
+      font-size: 12px;
+    }
   }
 `;
 export const DonationDetailsRight = styled.div`
@@ -114,6 +180,56 @@ export const DonationDetailsRight = styled.div`
       background-color: #fff;
     }
   }
+
+  @media (max-width: 1300px) {
+    h3 {
+      font-size: 18px;
+    }
+
+    span {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    padding: 20px;
+    justify-content: center;
+    height: 260px;
+    h3 {
+      font-size: 16px;
+    }
+
+    span {
+      font-size: 14px;
+    }
+
+    button {
+      font-size: 14px;
+      max-width: 200px;
+      height: 40px;
+    }
+  }
+
+  @media (max-width: 700px) {
+    padding: 12px;
+    height: 220px;
+    width: 100%;
+    max-width: 400px;
+
+    h3 {
+      font-size: 14px;
+    }
+
+    span {
+      font-size: 12px;
+    }
+
+    button {
+      font-size: 12px;
+      max-width: 180px;
+      height: 32px;
+    }
+  }
 `;
 
 export const OrContainer = styled.div`
@@ -121,9 +237,14 @@ export const OrContainer = styled.div`
   height: 300px;
   border-left: 2px solid #fff;
   z-index: 1;
-  h3 {
-    font-size: 24px;
-    font-weight: 500;
+
+  @media (max-width: 700px) {
+    width: 100%;
+    max-width: 500px;
+    padding: 0 12px;
+    height: 2px;
+    background-color: #fff;
+    border-left: none;
   }
 `;
 
@@ -135,6 +256,7 @@ export const ThankYouContainer = styled.div`
   width: 100%;
   padding: 24px 12px;
   margin-top: 80px;
+  gap: 20px;
 
   h3 {
     font-size: 24px;
@@ -151,6 +273,38 @@ export const ThankYouContainer = styled.div`
       font-weight: 700;
       font-size: 22px;
       color: #88959e;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    margin-top: 40px;
+    gap: 12px;
+
+    h3 {
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 14px;
+
+      span {
+        font-size: 20px;
+      }
+    }
+  }
+
+  @media (max-width: 700px) {
+    margin-top: 20px;
+    h3 {
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 12px;
+
+      span {
+        font-size: 16px;
+      }
     }
   }
 `;

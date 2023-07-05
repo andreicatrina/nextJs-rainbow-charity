@@ -6,6 +6,10 @@ export const LandingSectionContainer = styled.div`
   width: 100%;
   height: 500px;
   position: relative;
+
+  @media (max-width: 700px) {
+    height: 400px;
+  }
 `;
 
 export const TitleContainer = styled.div`
@@ -52,6 +56,26 @@ export const TitleContainer = styled.div`
       opacity: 1;
     }
   }
+
+  @media (max-width: 1000px) {
+    span {
+      font-size: 32px;
+    }
+
+    p {
+      font-size: 24px;
+    }
+  }
+
+  @media (max-width: 700px) {
+    span {
+      font-size: 28px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
 `;
 
 export const Title = styled.h3`
@@ -68,5 +92,13 @@ export const Title = styled.h3`
     100% {
       opacity: 1;
     }
+  }
+
+  @media (max-width: 1000px) {
+    font-size: 52px;
+  }
+
+  @media (max-width: 700px) {
+    font-size: 40px;
   }
 `;

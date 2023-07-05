@@ -19,8 +19,11 @@ import axios from "axios";
 export default function ContractPage() {
 
   async function onClick() {
-    const response = await axios.get("http://localhost:3001/contract/download", {responseType: 'blob'});
-    fileDownload(response.data, "contract.pdf")
+    const response = await axios.get(
+      "http://localhost:3000/contract/download",
+      { responseType: "blob" }
+    );
+    fileDownload(response.data, "contract.pdf");
   }
 
   return (
@@ -36,8 +39,8 @@ export default function ContractPage() {
           <CardsContainer>
             <ContractContainer>
               <h3>
-                Anul 2023: folosește butonul de mai jos, completează contractul
-                și virează suma dorită în contul Asociației până la 30 iunie.{" "}
+                Folosește butonul de mai jos, completează contractul și virează
+                suma dorită în contul Asociației{" "}
               </h3>
               <Link href="contract/formular-sponsorizare">
                 <button>Contract 2023</button>

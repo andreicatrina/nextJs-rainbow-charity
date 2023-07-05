@@ -33,7 +33,6 @@ export const AboutSection = () => {
             width={480}
             height={360}
             style={{
-              borderRadius: "8px",
               objectFit: "cover",
               filter: "grayscale(100)",
             }}
@@ -79,10 +78,7 @@ export const AboutSection = () => {
             width={480}
             height={360}
             style={{
-              borderRadius: "8px",
               objectFit: "cover",
-              width: "100%",
-              maxWidth: "480px",
               filter: "grayscale(0)",
             }}
           />
@@ -93,10 +89,7 @@ export const AboutSection = () => {
             width={480}
             height={360}
             style={{
-              borderRadius: "8px",
               objectFit: "cover",
-              width: "100%",
-              maxWidth: "480px",
             }}
           />
           <TextContainer>
@@ -140,10 +133,7 @@ export const AboutSection = () => {
             width={480}
             height={360}
             style={{
-              borderRadius: "8px",
               objectFit: "cover",
-              width: "100%",
-              maxWidth: "480px",
             }}
           />
         </FourthPostContainer>

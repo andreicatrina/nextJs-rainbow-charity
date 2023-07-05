@@ -39,23 +39,37 @@ export const LogoContainer = styled.div`
     width: 240px;
     height: 160px;
   }
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 700;
+
+    @media (max-width: 600px) {
+      font-size: 18px;
+    }
+  }
 `;
 
 export const MenuContainer = styled.div`
   display: flex;
+  align-items: center;
   gap: 20px;
   z-index: 1;
 
-  a {
-    height: 40px;
-    padding: 0 12px;
+  @media (max-width: 450px) {
+    gap: 8px;
   }
 `;
 
-export const DonateLink = styled.a`
+export const DonateLink = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 40px;
+  padding: 0 8px;
   gap: 4px;
   border: 1px solid transparent;
   font-size: 16px;
@@ -63,6 +77,7 @@ export const DonateLink = styled.a`
   background-color: #ffb600;
   color: white;
   border-radius: 6px;
+  cursor: pointer;
   transition: 0.6s;
 
   svg {
@@ -80,12 +95,23 @@ export const DonateLink = styled.a`
       color: #ffb600;
     }
   }
+  @media (max-width: 600px) {
+    font-size: 12px;
+    padding: 0 6px;
+    height: 32px;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 10px;
+  }
 `;
 
 export const AboutLink = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 40px;
+  padding: 0 8px;
   border: 1px solid #ffb600;
   border-radius: 6px;
   font-size: 16px;
@@ -97,12 +123,24 @@ export const AboutLink = styled.a`
     color: #fff;
     transform: scale(1.1);
   }
+
+  @media (max-width: 600px) {
+    font-size: 12px;
+    height: 32px;
+    padding: 0 6px;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 10px;
+  }
 `;
 
 export const ContactLink = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 40px;
+  padding: 0 8px;
   gap: 4px;
   border: 1px solid #ffb600;
   border-radius: 6px;
@@ -124,6 +162,16 @@ export const ContactLink = styled.a`
     svg {
       color: white;
     }
+  }
+
+  @media (max-width: 600px) {
+    height: 32px;
+    font-size: 12px;
+    padding: 0 6px;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 10px;
   }
 `;
 
