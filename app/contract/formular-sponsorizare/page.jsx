@@ -31,7 +31,8 @@ export default function Formpage() {
   }
 
   function onChangeCompanyName(e) {
-    setCompanyName(e.currentTarge.value);
+    setCompanyName(e.currentTarget.value);
+    // console.log(e.currentTarget.value);
   }
 
   function onChangeReg(e) {
