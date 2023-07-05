@@ -25,6 +25,14 @@ export const FormPageContainer = styled.div`
     font-weight: 700;
     padding: 24px 8px;
   }
+
+  @media (max-width: 600px) {
+    justify-content: center;
+
+    h2 {
+      text-align: center;
+    }
+  }
 `;
 
 export const Form = styled.form`
@@ -177,4 +185,10 @@ export const SubmitButtonContainer = styled.div`
       border: 2px solid #fa5a0a;
     }
   }
+`;
+
+export const ThankYouParagraph = styled.h2`
+  color: #4a4f54;
+  font-weight: 700;
+  padding: 24px 8px;
 `;

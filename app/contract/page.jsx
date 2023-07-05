@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import {
   ContractSectionContainer,
@@ -17,12 +17,8 @@ import Link from "next/link";
 import axios from "axios";
 
 export default function ContractPage() {
-
   async function onClick() {
-    const response = await axios.get(
-      "http://localhost:3000/contract/download",
-      { responseType: "blob" }
-    );
+    const response = await axios.get("http://localhost:3000/contract/download", { responseType: "blob" });
     fileDownload(response.data, "contract.pdf");
   }
 
@@ -38,10 +34,7 @@ export default function ContractPage() {
           </TitleContainer>
           <CardsContainer>
             <ContractContainer>
-              <h3>
-                Folosește butonul de mai jos, completează contractul și virează
-                suma dorită în contul Asociației{" "}
-              </h3>
+              <h3>Folosește butonul de mai jos, completează contractul și virează suma dorită în contul Asociației </h3>
               <Link href="contract/formular-sponsorizare">
                 <button>Contract 2023</button>
               </Link>
@@ -51,10 +44,7 @@ export default function ContractPage() {
               </LinksContainer>
             </ContractContainer>
             <DonationContainer>
-              <h3>
-                Dacă ești persoană fizică poți alege să redirecționezi 3,5% din
-                impozitul pe anul 2022:
-              </h3>
+              <h3>Dacă ești persoană fizică poți alege să redirecționezi 3,5% din impozitul pe anul 2022:</h3>
               <button>Descarca declaratia</button>
               <LinksContainer>
                 <a href="">Model de declaratie</a>

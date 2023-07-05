@@ -13,6 +13,7 @@ import {
   FormPageSection,
   LegalRepresentativeContainer,
   SubmitButtonContainer,
+  ThankYouParagraph,
 } from "./components";
 
 export default function Formpage() {

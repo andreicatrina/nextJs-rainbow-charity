@@ -68,6 +68,26 @@ export const ContractContainer = styled.div`
       font-size: 16px;
     }
   }
+  @media (max-width: 800px) {
+    padding: 20px;
+    height: 240px;
+    h3 {
+      font-size: 16px;
+    }
+
+    button {
+      width: 200px;
+      height: 40px;
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    height: 260px;
+    h3 {
+      padding-bottom: 20px;
+    }
+  }
 `;
 export const LinksContainer = styled.div`
   display: flex;
@@ -79,6 +99,14 @@ export const LinksContainer = styled.div`
   a {
     cursor: pointer;
     color: #fff;
+  }
+
+  @media (max-width: 800px) {
+    font-size: 14px;
+  }
+
+  @media (max-width: 700px) {
+    font-size: 12px;
   }
 `;
 
@@ -133,6 +161,27 @@ export const DonationContainer = styled.div`
       font-size: 16px;
     }
   }
+
+  @media (max-width: 800px) {
+    padding: 20px;
+    height: 240px;
+    h3 {
+      font-size: 16px;
+    }
+
+    button {
+      width: 200px;
+      height: 40px;
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    height: 260px;
+    h3 {
+      padding-bottom: 20px;
+    }
+  }
 `;
 
 export const CardsContainer = styled.div`
@@ -144,6 +193,10 @@ export const CardsContainer = styled.div`
   /* border: 2px solid red; */
   margin: 80px 0;
   padding: 0 24px;
+
+  @media (max-width: 700px) {
+    flex-direction: column;
+  }
 `;
 
 export const TitleContainer = styled.div`
@@ -161,5 +214,23 @@ export const TitleContainer = styled.div`
     font-size: 48px;
     font-weight: 700;
     color: #fff;
+  }
+
+  @media (max-width: 1100px) {
+    h3 {
+      font-size: 48px;
+    }
+    span {
+      font-size: 32px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    h3 {
+      font-size: 40px;
+    }
+    span {
+      font-size: 24px;
+    }
   }
 `;
