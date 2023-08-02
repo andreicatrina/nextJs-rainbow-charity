@@ -67,7 +67,7 @@ export const AboutUsTitleContainer = styled.div`
 
 export const FirstPostContainer = styled.div`
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   width: 100%;
   padding: 64px 24px;
   gap: 48px;
@@ -100,7 +100,9 @@ export const FirstPostContainer = styled.div`
 export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 100%;
+  max-width: 700px;
   padding: 12px;
   border-radius: 12px;
   transition: 0.6s;
@@ -125,6 +127,7 @@ export const TextContainer = styled.div`
   }
 
   @media (max-width: 1000px) {
+    max-width: 600px;
     h3 {
       font-size: 28px;
     }
@@ -147,7 +150,7 @@ export const TextContainer = styled.div`
 
 export const SecondPostContainer = styled.div`
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   width: 100%;
   padding: 64px 24px;
   gap: 48px;
@@ -182,11 +185,10 @@ export const SecondPostContainer = styled.div`
 
 export const ThirdPostContainer = styled.div`
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   width: 100%;
   padding: 64px 24px;
   gap: 48px;
-
   img {
     border-radius: 8px;
     width: 100%;
@@ -215,7 +217,7 @@ export const ThirdPostContainer = styled.div`
 `;
 export const FourthPostContainer = styled.div`
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   width: 100%;
   padding: 64px 24px;
   gap: 48px;
