@@ -1,5 +1,5 @@
 import "./globals.css";
-import { Playfair_Display, Rubik } from "next/font/google";
+import { Rubik } from "next/font/google";
 import StyledComponentsRegistry from "@/lib/registry";
 
 const rubik = Rubik({ subsets: ["latin"] });

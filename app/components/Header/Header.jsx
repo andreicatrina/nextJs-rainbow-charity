@@ -9,9 +9,6 @@ import {
   HeaderSection,
   LogoContainer,
   MenuContainer,
-  SubtitleContainer,
-  Title,
-  TitleContainer,
 } from "./components";
 
 import Logo from "../../../public/logo1.png";
@@ -20,7 +17,6 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 import Link from "next/link";
 
 export const Header = () => {
-
   function scrollToDonate() {
     window.scroll(0, 2600);
   }
@@ -29,7 +25,6 @@ export const Header = () => {
     <HeaderSection>
       <HeaderContainer>
         <LogoContainer>
-          {/* <Image src={Logo} alt="" /> */}
           <Link href="/">Logo</Link>
         </LogoContainer>
         <MenuContainer>

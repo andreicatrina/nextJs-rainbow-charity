@@ -117,6 +117,7 @@ export const AboutSection = () => {
             style={{
               objectFit: "cover",
             }}
+            alt="Charity child"
           />
         </FourthPostContainer>
       </AboutContainer>
