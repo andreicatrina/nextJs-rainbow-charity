@@ -7,7 +7,6 @@ import {
   AboutUsTitleContainer,
   FirstPostContainer,
   FourthPostContainer,
-  LineTitle,
   SecondPostContainer,
   TextContainer,
   ThirdPostContainer,
@@ -36,6 +35,7 @@ export const AboutSection = () => {
               objectFit: "cover",
               filter: "grayscale(100)",
             }}
+            alt="Charity"
           />
           <TextContainer>
             <h3>Cine suntem</h3>
@@ -75,6 +75,7 @@ export const AboutSection = () => {
               objectFit: "cover",
               filter: "grayscale(0)",
             }}
+            alt="Charity"
           />
         </SecondPostContainer>
         <ThirdPostContainer>
@@ -85,6 +86,7 @@ export const AboutSection = () => {
             style={{
               objectFit: "cover",
             }}
+            alt="Charity"
           />
           <TextContainer>
             <h3>Luptăm cu suferința</h3>

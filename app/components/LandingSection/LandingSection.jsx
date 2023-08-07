@@ -22,6 +22,7 @@ export const LandingSection = () => {
           // transform: "scale(2)",
           // filter: "blur(1px)",
         }}
+        alt="Charity together"
       />
       <TitleContainer>
         <Title>ÎMPREUNĂ</Title>

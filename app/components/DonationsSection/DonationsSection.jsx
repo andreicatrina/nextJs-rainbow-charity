@@ -7,7 +7,6 @@ import {
   DonationDetailsLeft,
   DonationsSectionContainer,
   DonationsTitleContainer,
-  LineTitle,
   DonationDetailsRight,
   OrContainer,
   ThankYouContainer,

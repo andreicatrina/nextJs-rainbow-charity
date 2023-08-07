@@ -6,14 +6,12 @@ import { Header } from "../../components/Header/Header";
 import { Main } from "../../components";
 import { Footer } from "../../components/Footer/Footer";
 import {
-  BankDetailsContainer,
   CompanyDetailsDiv,
   Form,
   FormPageContainer,
   FormPageSection,
   LegalRepresentativeContainer,
   SubmitButtonContainer,
-  ThankYouParagraph,
 } from "./components";
 
 export default function Formpage() {
@@ -80,32 +78,70 @@ export default function Formpage() {
       <Header />
       <FormPageSection>
         <FormPageContainer>
-          <h2>Completează datele firmei și noi îți vom genera automat contractul de sponsorizare</h2>
+          <h2>
+            Completează datele firmei și noi îți vom genera automat contractul
+            de sponsorizare
+          </h2>
           <Form action="">
             <CompanyDetailsDiv>
               <label htmlFor="">CUI Firma</label>
-              <input value={companyNo} type="text" placeholder="CUI" onChange={onChangeCompanyNo} />
+              <input
+                value={companyNo}
+                type="text"
+                placeholder="CUI"
+                onChange={onChangeCompanyNo}
+              />
 
               <label htmlFor="">Nume companie</label>
-              <input value={companyName} type="text" placeholder="Ex: S.C. ABC S.R.L." onChange={onChangeCompanyName} />
+              <input
+                value={companyName}
+                type="text"
+                placeholder="Ex: S.C. ABC S.R.L."
+                onChange={onChangeCompanyName}
+              />
 
               <label htmlFor="">Nr. Reg. Com.</label>
-              <input value={companyReg} type="text" placeholder="Ex: J17/1729/2018" onChange={onChangeReg} />
+              <input
+                value={companyReg}
+                type="text"
+                placeholder="Ex: J17/1729/2018"
+                onChange={onChangeReg}
+              />
 
               <label htmlFor="">Adresa</label>
-              <input value={companyAddress} type="text" placeholder="Strada, Nr." onChange={onChangeCompanyAddress} />
+              <input
+                value={companyAddress}
+                type="text"
+                placeholder="Strada, Nr."
+                onChange={onChangeCompanyAddress}
+              />
             </CompanyDetailsDiv>
             <h3>Reprezentant Legal</h3>
             <p>Aceste informații vor apărea în contract</p>
             <LegalRepresentativeContainer>
               <label htmlFor="">Nume</label>
-              <input value={lastName} type="text" placeholder="" onChange={onChangeLastName} />
+              <input
+                value={lastName}
+                type="text"
+                placeholder=""
+                onChange={onChangeLastName}
+              />
 
               <label htmlFor="">Prenume</label>
-              <input value={firstName} type="text" placeholder="" onChange={onChangeFirstName} />
+              <input
+                value={firstName}
+                type="text"
+                placeholder=""
+                onChange={onChangeFirstName}
+              />
 
               <label htmlFor="">Poziția în cadrul companiei</label>
-              <select value={companyPosition} name="" id="" onChange={onChangeCompanyPosition}>
+              <select
+                value={companyPosition}
+                name=""
+                id=""
+                onChange={onChangeCompanyPosition}
+              >
                 <option value="Administrator">Administrator</option>
                 <option value="Director">Director</option>
                 <option value="Director General">Director General</option>
