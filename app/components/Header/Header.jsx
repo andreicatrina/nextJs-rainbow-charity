@@ -11,7 +11,6 @@ import {
   MenuContainer,
 } from "./components";
 
-import Logo from "../../../public/logo1.png";
 import { FaDonate } from "react-icons/fa";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import Link from "next/link";
